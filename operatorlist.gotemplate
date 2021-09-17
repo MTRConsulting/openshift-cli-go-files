@@ -1,0 +1,6 @@
+{{- range .items -}}
+{- range .items -}}
+    OPERATOR NAME: {{.metadata.name}}
+    DEPLOYMENT NAME: {{.status.components.refs.name}}
+    DEPLOYMENT NAMESPACE: {{.status.components.refs.namespace}}
+{{- end -}}
